@@ -1,0 +1,39 @@
+.dropdown .nameandimg img {
+    width: 100px;
+}
+
+.nameandimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown {
+  width: 250px;
+  box-shadow: 0 0 10px grey;
+  padding: 15px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+}
+.dropdown ul li {
+  display: flex;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.dropdown ul li:hover {
+  background-color: #c7dcff;
+}
+.dropdown ul {
+  margin-top: 20px;
+}
+.dropdown ul li i {
+  color: black;
+  font-size: 17px;
+}
+.dropdown ul li p {
+  margin: left 10px;
+  font-size: 17px;
+}

@@ -1,0 +1,16 @@
+.hin_eng {
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+  width: 130px;
+  position: absolute;
+  top: 60px;
+}
+.hin_eng li {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.hin_eng li:hover {
+  background-color: #c7dcff;
+}

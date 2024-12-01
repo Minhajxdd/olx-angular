@@ -5,18 +5,17 @@
 
 <div class="hedder">
   <div class="navbar">
-    <img src="/images/img1.png" alt="" />
+    <img id="olx-logo" src="/images/img1.png" alt="Olx-log" />
 
-    <div class="contry_select" (click)="toggleDrop()">
+    <div class="contry_select" (click)="toggleCountries()">
       <div class="select">
         <p>Select your country</p>
         <i class="fa-solid fa-chevron-down"></i>
       </div>
 
-      @if (showDropDown()) {
-          <app-country-drop-down></app-country-drop-down>
+      @if (showCountries()) {
+      <app-country-drop-down></app-country-drop-down>
       }
-
     </div>
 
     <div class="search_box">
@@ -30,12 +29,13 @@
       <p><i class="fa-solid fa-magnifying-glass"></i></p>
     </div>
 
-    <div class="language">
+    <div class="language" (click)="toggleLanguages()">
       <p class="eng_tag">English</p>
-      <ul class="hin_eng">
-        <li onclick="languageolx('English')">English</li>
-        <li onclick="languageolx('हिंदी')">हिंदी</li>
-      </ul>
+    
+      @if (showLanguages()) {
+        <app-languages-drop-down />
+      }
+
     </div>
 
     <div class="messeage">
@@ -46,47 +46,15 @@
       <i class="fa-regular fa-bell"></i>
     </div>
 
-    <div class="your_logo">
+    <div class="your_logo" >
       <div class="girl_img" id="girl_img_id">
-        <img src="image/pic3.jpg" />
+        <img src="/images/profile.jpg" (click)="toggleProfile()" />
       </div>
 
-      <div class="dropdown" id="dropdownid">
-        <div class="nameandimg">
-          <img src="image/pic3.jpg" />
-          <p>Puja Varma</p>
-        </div>
+      @if (showProfile()) {
+          <app-profile-drop-down />
+      }
 
-        <ul>
-          <li>
-            <i class="fa-regular fa-user"></i>
-            <p>My Acccount</p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-box"></i>
-            <p>My Orders</p>
-          </li>
-          <hr />
-
-          <li>
-            <i class="fa-sharp fa-regular fa-circle-question"></i>
-            <p>Help</p>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-gear"></i>
-            <p>Setting</p>
-          </li>
-
-          <hr />
-
-          <li>
-            <i class="fa-solid fa-right-from-bracket"></i>
-            <p>Log Out</p>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div class="selling_page">
