@@ -1,14 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ViewEncapsulation } from '@angular/core';
 import { CountryDropDownComponent } from './country-drop-down/country-drop-down.component';
 import { ProfileDropDownComponent } from './profile-drop-down/profile-drop-down.component';
 import { LanguagesDropDownComponent } from "./languages-drop-down/languages-drop-down.component";
+import { NavBottomComponent } from "./nav-bottom/nav-bottom.component";
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [CountryDropDownComponent, ProfileDropDownComponent, LanguagesDropDownComponent],
+  imports: [CountryDropDownComponent, ProfileDropDownComponent, LanguagesDropDownComponent, NavBottomComponent],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  styleUrl: './nav-bar.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class NavBarComponent {
   showCountries = signal(false);

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { NavBottomComponent } from "./nav-bar/nav-bottom/nav-bottom.component";
 
 @Component({
   selector: 'app-root',
