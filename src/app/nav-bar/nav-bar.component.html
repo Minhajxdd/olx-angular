@@ -1,0 +1,99 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<div class="hedder">
+  <div class="navbar">
+    <img src="/images/img1.png" alt="" />
+
+    <div class="contry_select" (click)="toggleDrop()">
+      <div class="select">
+        <p>Select your country</p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      @if (showDropDown()) {
+          <app-country-drop-down></app-country-drop-down>
+      }
+
+    </div>
+
+    <div class="search_box">
+      <input
+        type="text"
+        class="searchclass"
+        id="searchid"
+        placeholder=" Find Cars, Mobiles Phones and More ......."
+      />
+
+      <p><i class="fa-solid fa-magnifying-glass"></i></p>
+    </div>
+
+    <div class="language">
+      <p class="eng_tag">English</p>
+      <ul class="hin_eng">
+        <li onclick="languageolx('English')">English</li>
+        <li onclick="languageolx('हिंदी')">हिंदी</li>
+      </ul>
+    </div>
+
+    <div class="messeage">
+      <i class="fa-regular fa-comment"></i>
+    </div>
+
+    <div class="messeage">
+      <i class="fa-regular fa-bell"></i>
+    </div>
+
+    <div class="your_logo">
+      <div class="girl_img" id="girl_img_id">
+        <img src="image/pic3.jpg" />
+      </div>
+
+      <div class="dropdown" id="dropdownid">
+        <div class="nameandimg">
+          <img src="image/pic3.jpg" />
+          <p>Puja Varma</p>
+        </div>
+
+        <ul>
+          <li>
+            <i class="fa-regular fa-user"></i>
+            <p>My Acccount</p>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-box"></i>
+            <p>My Orders</p>
+          </li>
+          <hr />
+
+          <li>
+            <i class="fa-sharp fa-regular fa-circle-question"></i>
+            <p>Help</p>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-gear"></i>
+            <p>Setting</p>
+          </li>
+
+          <hr />
+
+          <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>Log Out</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="selling_page">
+      <button>
+        <i class="fa-sharp fa-solid fa-plus"></i>
+        <p>SELL</p>
+      </button>
+    </div>
+  </div>
+</div>
