@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CountryDropDownComponent } from './country-drop-down.component';
+import { TryOlxComponent } from './try-olx.component';
 
-describe('CountryDropDownComponent', () => {
-  let component: CountryDropDownComponent;
-  let fixture: ComponentFixture<CountryDropDownComponent>;
+describe('TryOlxComponent', () => {
+  let component: TryOlxComponent;
+  let fixture: ComponentFixture<TryOlxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CountryDropDownComponent]
+      imports: [TryOlxComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CountryDropDownComponent);
+    fixture = TestBed.createComponent(TryOlxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
