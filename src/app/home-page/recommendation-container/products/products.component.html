@@ -1,0 +1,18 @@
+<div class="col position-relative h-260 w-280">
+    <div class="card h-100 d-flex justify-content-center align-items-center">
+      <div class="position-absolute top-0 end-0 m-2">
+      <i class="fa-regular fa-heart p-2 rounded-circle" style="font-size: 20px; cursor: pointer;"></i>
+      </div>
+      <img
+        style="height: 150px; width: 270px; padding: 10px;"
+        [src]="product().image"
+        class="card-img-top"
+        [alt]="product().title.substring(0, 50) + '...'"
+      />
+      <div class="card-body">
+        <h5 class="card-title">₹ {{ product().price }}</h5>
+        <p class="card-text">{{ product().title.substring(0, 27) + '...' }}</p>
+        <p>{{ product().description.substring(0, 40) + '...' }}</p>
+      </div>
+    </div>
+  </div>

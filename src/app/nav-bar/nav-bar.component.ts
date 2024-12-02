@@ -10,7 +10,7 @@ import { NavBottomComponent } from "./nav-bottom/nav-bottom.component";
   imports: [CountryDropDownComponent, ProfileDropDownComponent, LanguagesDropDownComponent, NavBottomComponent],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class NavBarComponent {
   showCountries = signal(false);
