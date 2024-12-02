@@ -10,11 +10,18 @@
       @for (product of products(); track product.id) {
       <app-products [product]="product" />
       }
+
+      @if (loadMore()) {
+        @for (product of products(); track product.id) {
+          <app-products [product]="product" />
+        }
+      }
+
     </div>
 
-    <div class="align-items-center mt-4">
+    <div (click)="onLoadMore()" class="align-items-center mt-4">
       <button type="button" class="btn btn-light border-3 border-dark">
-        Load More
+        {{ loadMoreText() }}
       </button>
     </div>
 
