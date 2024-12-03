@@ -1,0 +1,40 @@
+p {
+  color: grey;
+  text-align: left;
+}
+h3 {
+  text-align: left;
+}
+
+.first_p {
+  color: #333;
+  text-align: left;
+}
+p:last-child {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: right;
+}
+button {
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+img {
+  margin-top: -25px;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+.product-container {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 15px 20px;
+  height: 280px;
+}
+.product-container button {
+  margin-left: 88%;
+}

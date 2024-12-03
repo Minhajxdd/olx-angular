@@ -1,0 +1,32 @@
+
+#homepage_scnd_parent {
+    width: 77%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #homepage_scnd_child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+    height: auto;
+  }
+  #homepage_load_more {
+    margin-left: 50%;
+    width: 120px;
+    font-size: 16px;
+    height: 50px;
+    margin-top: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: initial;
+    margin-bottom: 27px;
+  }
+  
+  #homepage_load_more:hover {
+    border: 5px solid black;
+  }

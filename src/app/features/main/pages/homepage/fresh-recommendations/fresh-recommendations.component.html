@@ -1,1 +1,22 @@
-<p>fresh-recommendations works!</p>
+<div id="homepage_scnd_parent">
+  <span class="head_span">Fresh recommendations</span>
+  <div id="homepage_scnd_child">
+
+    @for (product of products(); track product.id) {
+        <app-product-card [product]="product" />
+    }
+
+    @if (loadMore()) {
+        @for (product of products(); track product.id) {
+            <app-product-card [product]="product" />
+        }
+    }
+
+
+  </div>
+</div>
+
+<!-- *----------------------- LOAD MORE ------------------------ -->
+
+<button (click)="onLoadMore()" id="homepage_load_more"><b>{{ loadMoreText() }}</b></button>
+<div id="homepage_third_parent"></div>

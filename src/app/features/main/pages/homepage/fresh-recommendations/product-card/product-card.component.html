@@ -1,0 +1,13 @@
+<div class="product-container">
+    <button class="head_button" style="color: grey;">
+      <i class="fa-solid fa-heart fa-grey"></i>
+    </button>
+    <!-- <span class="featured">Featured</span> -->
+    <div>
+      <img [src]=" product().image " alt="">
+    </div>
+    <h3>₹ {{ product().price }}</h3>
+    <p class="first_p">{{ product().title.substring(0, 40) + '...' }}</p>
+    <p>{{ product().category.substring(0, 30) + '...' }}</p>
+    <p>rating: {{ product().rating.rate }}</p>
+  </div>
