@@ -1,0 +1,17 @@
+@if(!name()) {
+<div style="cursor: pointer;">
+  <a (click)="toggleLogin()" class="button">Login</a>
+</div>
+} @else {
+
+<div class="your_logo" (click)="onToggleUser()">
+  <div class="custom-girl_img" id="girl_img_id">
+    <img [src]="userProfileImg()" />
+  </div>
+
+  @if (toggleUserCard()) {
+      <app-user-card [name]="name" [email]="email" [userProfileImg]="userProfileImg" (logout)="getLocalData()" />
+  }
+
+</div>
+}

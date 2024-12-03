@@ -61,9 +61,8 @@
 
 
 
-
         <div class="message">
-          <a href="chat.html"><i class="fa-regular fa-comment"></i></a>
+          <a ><i class="fa-regular fa-comment"></i></a>
         </div>
 
 
@@ -77,143 +76,14 @@
             
           
              
-             <div>
-              <a class="button" href="#divOne">Login</a>
-            </div>
+            <app-login-profile (close)="toggleLogin()"></app-login-profile>
 
 
-
-            <!-- <style>
-              .custom-girl_img img {
-                width: 55px;
-                border-radius: 50%;
-                cursor: pointer;
-                margin-left: 55px;
-              }
-    
-              .custom-dropdown {
-                width: 250px;
-                box-shadow: 0 0 10px grey;
-                padding: 15px;
-                background-color: white;
-          
-                position: absolute;
-                top: 60px;
-              }
-              .custom-dropdown ul li {
-                display: flex;
-                padding: 10px;
-                margin-top: 5px;
-                cursor: pointer;
-              }
-              .custom-dropdown ul li:hover {
-                background-color: #c7dcff;
-              }
-              .custom-dropdown ul {
-                margin-top: 20px;
-              }
-              .custom-dropdown ul li i {
-                color: black;
-                font-size: 17px;
-              }
-              .custom-dropdown ul li p {
-                margin: left 10px;
-                font-size: 17px;
-              }
-    
-              .custom-nameandimg img {
-                width: 65px;
-                border-radius: 50%;
-                border-radius: 50;
-              }
-              .custom-nameandimg p {
-                font-size: 18px;
-                font-weight: bold;
-              }
-              .custom-nameandimg {
-                display: flex;
-                align-items: center;
-                margin: 10px 0 20px 0;
-              }
-            </style>
-    
-            <div class="your_logo">
-              <div class="custom-girl_img" id="girl_img_id">
-                <img src="image/pic3.jpg" />
-              </div>
-    
-              <div class="custom-dropdown" id="dropdownid">
-                <div class="custom-nameandimg">
-                  <img src="image/pic3.jpg" />
-                  <p>Puja Varma</p>
-                </div>
-    
-                <ul>
-                  <li>
-                    <i class="fa-regular fa-user"></i>
-                    <p>My Acccount</p>
-                  </li>
-    
-                  <li>
-                    <i class="fa-solid fa-box"></i>
-                    <p>My Orders</p>
-                  </li>
-                  <hr />
-    
-                  <li>
-                    <i class="fa-sharp fa-regular fa-circle-question"></i>
-                    <p>Help</p>
-                  </li>
-    
-                  <li>
-                    <i class="fa-solid fa-gear"></i>
-                    <p>Setting</p>
-                  </li>
-    
-                  <hr />
-    
-                  <li>
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <p>Log Out</p>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
+            @if (showLogin()) {
+              <app-login-modal (close)="toggleLogin()" />
+            }
 
 
-
-            <div class="overlay" id="divOne">
-              <div class="wrapper">
-                <h2></h2><a class="close" href="#">&times;</a>
-                <div class="content">
-                  <div class="containerpopup">
-                    <img width="60%" src="C:\Users\shara\Downloads\loginEntryPointPost.png" alt="">
-
-                    <div class="continuephone">
-                      <i class="fa-solid fa-mobile"></i> <span>Continue with Phone</span>
-                    </div>
-
-                    <div class="continueemail">
-                      <i class="fa-brands fa-google"></i> <span>Continue with Google</span>
-                    </div>
-                    <br>
-                    <div>
-                      <p>OR</p>
-                    </div>
-                    <div class="loginwithemail_btn">
-                      <a href="signup.html">Login as User</a> ||
-                      <a href="adminLogin.html">Login as Admin</a>
-                    </div>
-
-                    <div>
-                      <p>All your personal details are safe with us.</p>
-                      <p>If you continue, you are accepting <a href="">OLX Terms and Conditions and Privacy Policy</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

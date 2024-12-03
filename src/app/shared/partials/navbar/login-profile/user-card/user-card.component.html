@@ -1,0 +1,36 @@
+<div class="custom-dropdown" id="dropdownid">
+    <div class="custom-nameandimg">
+      <img [src]="userProfileImg()()" />
+      <p>{{ name()() }}</p>
+    </div>
+
+    <ul>
+      <li>
+        <i class="fa-regular fa-user"></i>
+        <p>{{ email()() }}</p>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-box"></i>
+        <p>My Orders</p>
+      </li>
+      <hr />
+
+      <li>
+        <i class="fa-sharp fa-regular fa-circle-question"></i>
+        <p>Help</p>
+      </li>
+
+      <li>
+        <i class="fa-solid fa-gear"></i>
+        <p>Setting</p>
+      </li>
+
+      <hr />
+
+      <li (click)="onlogout()">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <p >Log Out</p>
+      </li>
+    </ul>
+  </div>
