@@ -2,11 +2,12 @@ import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductServices } from '../../../../../shared/services/products.service';
 import { Product } from '../../../../../shared/models/product.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-fresh-recommendations',
   standalone: true,
-  imports: [ProductCardComponent],
+  imports: [ProductCardComponent, RouterLink],
   templateUrl: './fresh-recommendations.component.html',
   styleUrl: './fresh-recommendations.component.css'
 })
