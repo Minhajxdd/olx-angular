@@ -1,0 +1,54 @@
+.all_categories{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: -3px;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 5;
+}
+
+.allcatsubmenu{
+    display: flex;
+    gap: 10%;
+    color: rgb(64, 99, 103);
+    margin-left: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 85%;
+    justify-content: space-around;
+    position: absolute;
+    background-color: white;
+}
+
+
+
+.catssubmenumainheading .subheading{
+    display: inline-block;
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin: 16px 0px;
+    width: 100%;
+ 
+}
+
+.catssubmenumainheading .subsubmenus{
+    margin: 8px 10px;
+}
+
+.catssubmenumainheading .subheading span{
+    color: #002f34;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.catssubmenumainheading .subsubmenus span{
+    font-size: 14px;
+    color: black;
+}
+
+.catssubmenumainheading a{
+    text-decoration: none;
+}
+
+.catssubmenumainheading span:hover{
+    color: #00a49f;
+    cursor: pointer;
+} 
